@@ -21,7 +21,14 @@ export default {
           '07': '#ECFFC4',
           '08': '#F2FDDD',
         }
-      }
+      },
+      screens: {
+        sm: '375px',
+        md: '640px',
+        lg: '1008px',
+        xl: '1920px',
+      },
+      fontFamily: ['Pretendard JP']
     },
   },
   plugins: [],

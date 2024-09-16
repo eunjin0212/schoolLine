@@ -8,12 +8,39 @@ import {
 import './index.css'
 import App from './App';
 
-const router = createBrowserRouter([
+export const routes = [
   {
     path: "/",
+    title: '',
     element: <App />,
   },
-]);
+  {
+    path: "/service",
+    title: '機能一覧',
+    element: <App />,
+  },
+  {
+    path: "/faq",
+    title: 'よくあるご質問',
+    element: <App />,
+  },
+  {
+    path: "/content",
+    title: '導入の流れ',
+    element: <App />,
+  },
+  {
+    path: "/plan",
+    title: '利用プラン',
+    element: <App />,
+  },
+  {
+    path: "/business",
+    title: 'お問い合わせ',
+    element: <App />,
+  },
+]
+const router = createBrowserRouter(routes);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
