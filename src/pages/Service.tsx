@@ -289,7 +289,7 @@ const Service = () => {
       <section className='h-[305px] md:h-[521px] lg:h-[560px] bg-purple-02 flex items-end justify-center'>
         <div className='w-[342.19px] md:w-[584px] lg:w-[896px] xl:w-[1440px]'>
           <h1 className='text-2xl md:text-[40px] leading-7 md:leading-[48px] font-extrabold tracking-widest text-white'>サービス紹介</h1>
-          <div className='inline-flex flex-col items-center justify-end w-full bg-white mt-11 md:mt-[76px] lg:py-[61px]'>
+          <div className='inline-flex flex-col items-center justify-end w-full bg-white mt-11 md:mt-[75px] pt-6 md:pt-[42px] lg:py-[61px]'>
             <h2 className='w-[274.22px] md:w-[468px] lg:w-[630px] mb-2 md:mb-[14px] lg:mb-7 text-lg md:text-[32px] leading-5 md:leading-9 lg:leading-[48px] font-bold text-center'>SCHOOL Lineは先生と学生、保護者がコミュニケーションを円滑にサポートします。</h2>
             <p className='w-[274.22px] md:w-[468px] lg:w-full text-xs md:text-[18px] leading-[18px] md:leading-8 mb-1 md:mb-[10px] lg:mb-0 text-center -tracking-[0.04em]'>学校DX化による効率化と、学生たちへのDＸ化適応を目指すトータルコミュニケーション</p>
           </div>
@@ -322,7 +322,10 @@ const Service = () => {
                   dangerouslySetInnerHTML={{ __html: service.description }}
                 />
               </div>
-              {service.icons.map((icon, idx) => <Fragment key={`serviceIcon_${idx}`}>{icon}</Fragment>)}
+              {service.icons.map((icon, idx) =>
+                <div key={`serviceIcon_${idx}`} className='mx-auto w-fit lg:mx-0'>
+                  {icon}
+                </div>)}
             </div>
           )}
         </div>
