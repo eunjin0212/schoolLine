@@ -1,13 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
-import { routes } from '../main';
+import { type Route, routes } from '../main';
 import { Logo_1008, Logo_1920, Logo_375, Logo_640 } from '../assets/Logo';
 import { Oreo_24, Oreo_28 } from '../assets/Oreo';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 
+
 const NavBar = () => {
   const linkPadding = 'lg:py-[1.625rem] py-[0.625rem]'
-  const filteredRoutes = routes.filter(route => route.title)
+  const filteredRoutes = routes.children.filter(route => route.title) as Route[]
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false)
 
@@ -16,7 +17,7 @@ const NavBar = () => {
   }, [pathname])
 
   return (
-    <nav className='flex justify-center h-12 px-6 lg:h-24 md:h-14 lg:px-9 md:px-7'>
+    <nav className='flex justify-center h-12 px-6 lg:h-24 md:h-14 lg:px-9 md:px-7 shadow-[0px_4px_8px_0px_#0000000A]'>
       <ul className='flex lg:w-[90rem] w-full lg:relative gap-5 xl:gap-10'>
         <li className={linkPadding}>
           <Link to={'/'}>
