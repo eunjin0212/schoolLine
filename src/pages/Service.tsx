@@ -337,7 +337,7 @@ const Service = () => {
               <div
                 key={col.label}
                 className={[
-                  'bg-purple-01 text-white font-semibold text-[4px] leading-[5px] md:text-xs border-r-[0.10px] last-of-type:border-r-0 border-gray-06',
+                  'bg-purple-01 text-white font-semibold text-[4px] leading-[5px] md:text-xs lg:text-base border-r-[0.10px] last-of-type:border-r-0 border-gray-06',
                   col.align,
                   'py-[6px] md:py-[14px] xl:py-6 px-[9px] md:px-[7px] lg:px-6 xl:px-8 md:text-nowrap',
                   col.className,
