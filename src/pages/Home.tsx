@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { Fragment } from 'react'
 import applyPlan_375 from '../assets/images/apply_plan_375.svg'
 import applyPlan_640 from '../assets/images/apply_plan_640.svg'
 import applyPlan_1920 from '../assets/images/apply_plan_1920.svg'
@@ -5,13 +7,11 @@ import aboutSchoolLine_375 from '../assets/images/about_school_line_375.svg'
 import aboutSchoolLine_640 from '../assets/images/about_school_line_640.svg'
 import aboutSchoolLine_1008 from '../assets/images/about_school_line_1008.svg'
 import aboutSchoolLine_1920 from '../assets/images/about_school_line_1920.svg'
-import { Link } from 'react-router-dom'
 import { RightArrow_16, RightArrow_26, RightArrow_28 } from '../assets/RightArrow'
 import { Feature1_1_375, Feature1_1_640, Feature1_2_375, Feature1_2_640, Feature1_3_375, Feature1_3_640 } from '../assets/Feature1'
 import { Feature2_1_375, Feature2_2_375, Feature2_2_640, Feature2_3_375, Feature2_3_640 } from '../assets/Feature2'
 import { Feature3_1_375, Feature3_1_640, Feature3_2_375, Feature3_2_640, Feature3_3_375, Feature3_3_640 } from '../assets/Feature3'
 import { Feature4_1_375, Feature4_1_640, Feature4_2_375, Feature4_2_640, Feature4_3_375, Feature4_3_640 } from '../assets/Feature4'
-import { Fragment } from 'react/jsx-runtime'
 import { Vision_375, Vision_640 } from '../assets/Vision'
 
 const Home = () => {
@@ -234,7 +234,7 @@ const Home = () => {
       <section className='bg-green-08 h-[1125px] md:h-[1954px] lg:h-[2147px] xl:h-[1414px] pt-[72px] md:pt-[121px] lg:pt-[218px] xl:pt-[218px]'>
         <div className='flex flex-col items-center justify-center w-full md:w-[552px] lg:w-[870px] xl:w-[1398px] gap-3 mb-10 md:items-start md:mx-auto md:mb-[82px] xl:mb-[138px]'>
           <h1 className='text-2xl leading-7 md:text-[40px] md:leading-[48px] lg:text-[40px] lg:leading-[48px] font-semibold'>SCHOOL Line <span className='font-bold'>の特徴</span></h1>
-          <p className='text-xl font-normal leading-6 text-gray-07 md:text-2xl md:leading-7'>機能紹介</p>
+          <p className='text-xl font-normal leading-6 text-gray-08 md:text-2xl md:leading-7'>機能紹介</p>
         </div>
         <div className='w-[342px] md:w-[552px] lg:w-[640px] xl:w-[1360px] mx-auto flex flex-col gap-10 md:gap-20 lg:gap-[60px] xl:gap-x-20 xl:gap-y-[104px] xl:grid xl:grid-cols-2'>
           {features.map((feature, index) =>
@@ -247,7 +247,7 @@ const Home = () => {
                     md:px-[18px] md:pb-[31px] md:pt-[38px] lg:px-[27px] lg:pt-10`
                   }>
                     {child.icons.map((icon, idx) => <Fragment key={idx}>{icon}</Fragment>)}
-                    <span className={`text-xs leading-[18px] font-medium text-gray-09 text-center md:text-[15px] md:leading-[22px] ${child.className}`}>{child.description}</span>
+                    <span className={`text-xs leading-[18px] font-medium text-gray-10 text-center md:text-[15px] md:leading-[22px] ${child.className}`}>{child.description}</span>
                   </li>
                 )}
               </ul>

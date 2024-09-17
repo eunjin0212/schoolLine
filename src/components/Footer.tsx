@@ -12,7 +12,7 @@ const Footer = () => {
           <Logo_1008 className='hidden md:block' />
           <ul className='inline-flex flex-col gap-4 lg:grid lg:gap-x-[78px] lg:h-[87px] xl:h-[93px] grid-flow-col lg:grid-rows-3 lg:mr-[100px] xl:mr-[163px]'>
             {links.map(item =>
-              <li key={item.title} className='text-xs leading-[14px] md:text-sm md:leading-4 font-medium text-gray-06'>
+              <li key={item.title} className='text-xs leading-[14px] md:text-sm md:leading-4 font-medium text-gray-07'>
                 <Link to={item.path}>{item.title}</Link>
               </li>
             )}
