@@ -6,6 +6,6 @@ export const DownArrow_375 = ({ ...props }) => (
 
 export const DownArrow_640 = ({ ...props }) => (
   <svg {...props} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4 7L10 13L16 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M4 7L10 13L16 7" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 )
