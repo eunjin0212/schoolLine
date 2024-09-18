@@ -1,3 +1,4 @@
+import { Fragment } from 'react/jsx-runtime'
 import { ProgressArrow_1008, ProgressArrow_375, ProgressArrow_640 } from '../assets/ProgressArrow'
 import ContactCard from '../components/ContactCard'
 import PageHeaderSection from '../components/PageHeaderSection'
@@ -41,7 +42,7 @@ const Business = () => {
           <p className={`
             text-xs leading-[19px] pb-7
             md:w-[468px] md:text-[18px] md:leading-8 md:pb-[75px]
-            lg:w-full lg:pb-[69px]
+            lg:w-full lg:pb-[69px] lg:leading-5
             text-center -tracking-[0.04em]
           `}>
             学校側でSCHOOL Lineを導入する過程を<br className='block md:hidden' />
@@ -58,7 +59,7 @@ const Business = () => {
           mx-auto flex flex-col items-center
         `}>
           {processes.map((process, idx) =>
-            <>
+            <Fragment key={idx}>
               <ProcessCard idx={idx} {...process} />
               {
                 idx < processes.length - 1 &&
@@ -68,7 +69,7 @@ const Business = () => {
                   <ProgressArrow_1008 className='hidden lg:block' />
                 </>
               }
-            </>
+            </Fragment>
           )}
         </div>
       </section>
