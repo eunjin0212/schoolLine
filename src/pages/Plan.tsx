@@ -97,10 +97,13 @@ const Plan = () => {
         </p>
       </>
     </PageHeaderSection>
-    <section className='pt-[60px]'>
+    <section className='pt-[60px] md:pt-[100px]'>
       <div
         className={`
           w-[343px] px-16 py-12 rounded-3xl gap-[35px]
+          md:w-[584px] md:px-28 md:py-20 md:rounded-[44px] md:gap-[60px]
+          lg:w-[784px] lg:px-[211px] lg:py-20
+          xl:w-[1360px] xl:flex-row xl:gap-8 xl:py-20 xl:px-[108px]
           bg-gray-01 flex flex-col mx-auto
         `}
       >
