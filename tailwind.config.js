@@ -36,9 +36,9 @@ export default {
       },
       screens: {
         sm: '375px',
-        md: '640px',
-        lg: '1008px',
-        xl: '1920px',
+        md: '501px',
+        lg: '641px',
+        xl: '1009px',
       },
       fontFamily: ['Pretendard JP']
     },
