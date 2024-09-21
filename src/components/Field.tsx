@@ -33,7 +33,7 @@ const Field = ({ label, value, onChange, required = true, type = 'text' }: Field
           value={inputValue}
         />
         : <textarea
-          className={`h-20 md:h-[120px] ${inputClass}`}
+          className={`h-20 md:h-[120px] resize-none ${inputClass}`}
           onChange={(e) => onChange(e.target.value)}
           value={inputValue}
         />
