@@ -37,8 +37,8 @@ export default {
       screens: {
         sm: '375px',
         md: '501px',
-        lg: '641px',
-        xl: '1009px',
+        lg: '1008px',
+        xl: '1920px',
       },
       fontFamily: ['Pretendard JP']
     },
