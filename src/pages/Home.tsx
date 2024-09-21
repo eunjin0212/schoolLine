@@ -141,7 +141,7 @@ const Home = () => {
   ]
   return (
     <main>
-      <section className='bg-green-07 relative h-[497px] md:h-[936px] lg:h-[751px] w-full lg:px-9'>
+      <section className='bg-green-02 relative h-[497px] md:h-[936px] lg:h-[751px] w-full lg:px-9'>
         <div className='flex justify-center'>
           <div className='lg:w-[90rem] w-full pt-[60px] md:pt-[220px] lg:pt-[180px] pl-7 md:pl-10 lg:pl-0'>
             <div className='mb-8 md:mb-14 xl:mb-16 w-[291px] md:w-[550px] lg:w-[620px] xl:w-[695px]'>
@@ -159,7 +159,7 @@ const Home = () => {
             lg:h-[89px] 
             xl:h-[100px] xl:rounded-[50px] xl:text-[28px] xl:leading-[22px] xl:gap-4`
             }>
-              いますぐ無料プラン申込
+              お問い合わせ
               <RightArrow_16 className='block md:hidden' />
               <RightArrow_26 className='hidden md:block xl:hidden' />
               <RightArrow_28 className='hidden xl:block' />
@@ -170,7 +170,7 @@ const Home = () => {
         <img src={applyPlan_640} alt='apply_plan_640' className='absolute right-[30px] -bottom-[53.4px] object-contain hidden md:block xl:hidden' />
         <img src={applyPlan_1920} alt='apply_plan_1920' className='absolute right-[30px] -bottom-[91px] object-contain hidden xl:block' />
       </section>
-      <section className='bg-green-03 h-[800px] md:h-[1398px] lg:h-[1846px] xl:h-[1296px] pt-[171px] md:pt-[282px] lg:pt-[340px]'>
+      <section className='bg-green-06 h-[800px] md:h-[1398px] lg:h-[1846px] xl:h-[1296px] pt-[171px] md:pt-[282px] lg:pt-[340px]'>
         <div className={
           `w-[312px] h-[555px] relative mx-auto
           md:w-[552px] md:h-[946px]
@@ -186,10 +186,8 @@ const Home = () => {
               md:text-[29px] md:leading-[34px] md:mb-10
               lg:text-4xl lg:leading-[49px] lg:mb-11
               `}>SCHOOL Lineとは？</p>
-            <p className='font-bold text-sm leading-[22px] md:text-[23px] md:leading-[39px] lg:text-[28px] lg:leading-[48px]'>
-              学校と生徒・
-              <strong className='font-extrabold'>保護者をリアルタイムにつなぐコミュニケーションにより</strong>
-              校務効率化
+            <p className='font-semibold text-sm leading-[22px] md:text-[23px] md:leading-[39px] lg:text-[28px] lg:leading-[48px]'>
+              学校と生徒・保護者をリアルタイムにつなぐコミュニケーションにより 校務効率化
             </p>
           </div>
           <div className={
@@ -202,7 +200,7 @@ const Home = () => {
             <ul className='w-[222px] flex gap-2 flex-wrap mb-[31px] ml-[22px] md:w-[379px] md:mb-[42px] md:ml-11 md:gap-5 lg:mb-[46px] lg:ml-[82px] xl:h-[106px] xl:mt-[491px] xl:ml-20'>
               {tags.map(tag => <li
                 key={tag}
-                className='rounded-[17px] text-[9px] leading-[11px] p-2 bg-white text-green-01 font-medium md:rounded-[30px] md:p-3 md:text-base md:leading-[19px]'>
+                className='rounded-[17px] text-[9px] leading-[11px] p-2 bg-white text-green-08 font-medium md:rounded-[30px] md:p-3 md:text-base md:leading-[19px]'>
                 # {tag}
               </li>)}
             </ul>
@@ -231,18 +229,17 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className='bg-green-08 h-[1125px] md:h-[1954px] lg:h-[2147px] xl:h-[1414px] pt-[72px] md:pt-[121px] lg:pt-[218px] xl:pt-[218px]'>
+      <section className='bg-green-01 h-[1125px] md:h-[1954px] lg:h-[2147px] xl:h-[1414px] pt-[72px] md:pt-[121px] lg:pt-[218px] xl:pt-[218px]'>
         <div className='flex flex-col items-center justify-center w-full md:w-[552px] lg:w-[870px] xl:w-[1398px] gap-3 mb-10 md:items-start md:mx-auto md:mb-[82px] xl:mb-[138px]'>
           <h1 className='text-2xl leading-7 md:text-[40px] md:leading-[48px] lg:text-[40px] lg:leading-[48px] font-semibold'>
-            SCHOOL Line
-            <strong>の特徴</strong>
+            SCHOOL Lineの特徴
           </h1>
-          <p className='text-xl font-normal leading-6 text-gray-08 md:text-2xl md:leading-7'>機能紹介</p>
+          <p className='text-xl font-normal leading-6 text-green-09 md:text-2xl md:leading-7'>機能紹介</p>
         </div>
         <div className='w-[342px] md:w-[552px] lg:w-[640px] xl:w-[1360px] mx-auto flex flex-col gap-10 md:gap-20 lg:gap-[60px] xl:gap-x-20 xl:gap-y-[104px] xl:grid xl:grid-cols-2'>
           {features.map((feature, index) =>
             <div key={`container_${index}`} className='flex flex-col gap-3 md:gap-8 xl:gap-10'>
-              <p className='h-8 md:h-[60px] px-4 md:px-6 lg:px-[22px] text-sm leading-4 md:text-[28px] md:leading-[33px] rounded-lg md:rounded-xl bg-green-05 font-semibold inline-flex items-center'>{feature.title}</p>
+              <p className='h-8 md:h-[60px] px-4 md:px-6 lg:px-[22px] text-sm leading-4 md:text-[28px] md:leading-[33px] rounded-lg md:rounded-xl bg-green-04 font-semibold inline-flex items-center'>{feature.title}</p>
               <ul key={`${feature.title}_${index}`} className='grid gap-[6px] lg:gap-5 grid-cols-3 h-[148px] md:h-[240px] lg:h-[260px]'>
                 {feature.children.map((child, childIdx) =>
                   <FeatureCard key={`${child.description}_${childIdx}`} {...child} />
@@ -253,16 +250,16 @@ const Home = () => {
         </div>
       </section>
       <section className='pt-12 md:pt-[248px] bg-white h-[806px] md:h-[1551px] xl:h-[1260px]'>
-        <div className='w-[343px] md:w-[528px] lg:w-[904px] xl:w-[1360px] bg-green-08 rounded-3xl md:rounded-[44px] border-[1.17px] md:border-2 p-[30px] pt-11 md:p-[23px] md:pt-12 lg:px-[92px] lg:pt-[100px] xl:px-[116px] xl:pb-[134px] border-white shadow-[0px_0.59px_11.74px_0px_#0000001F] md:shadow-[0px_1px_20px_0px_#0000001F] mx-auto'>
+        <div className='w-[343px] md:w-[528px] lg:w-[904px] xl:w-[1360px] bg-green-01 rounded-3xl md:rounded-[44px] border-[1.17px] md:border-2 p-[30px] pt-11 md:p-[23px] md:pt-12 lg:px-[92px] lg:pt-[100px] xl:px-[116px] xl:pb-[134px] border-white shadow-[0px_0.59px_11px_0px_#0000001F] md:shadow-[0px_1px_20px_0px_#0000001F] mx-auto'>
           <p className='text-xl font-bold leading-6 text-center md:text-left md:text-4xl md:leading-[43px] lg:text-[40px] lg:leading-[48px] lg:text-center xl:mx-[54px]'>SCHOOL Lineのビジョン</p>
           <div className={`
-            py-[14px] px-[18px] mt-7 text-xs leading-5 rounded-[9px]
+            py-[14px] px-[18px] mt-7 text-xs leading-5 rounded-[9px] font-bold
             md:py-6 md:px-[31px] md:text-xl md:leading-9 md:mt-16 md:rounded-2xl
             lg:px-12 lg:mt-20 lg:text-2xl
-            xl:px-[58px] xl:leading-7 xl:mx-[54px]
-            font-bold text-white bg-green-03 w-full xl:w-max 
+            xl:px-[58px] xl:leading-7 xl:mx-[54px] xl:font-semibold
+            text-white bg-green-06 w-full xl:w-max 
           `}>
-            学校DX化による効率化と、学生たちへのDＸ化適応を目指すトータルコミュニケーション
+            学校DX化による効率化と、学生たちへのD X 化適応を目指すトータルコミュニケーション
           </div>
           <div className='xl:inline-flex xl:mt-[65px] xl:gap-[84px]'>
             <div className='mx-auto my-6 w-fit md:my-[46px] lg:mt-[60px] lg:mb-14 xl:my-0'>
@@ -279,14 +276,13 @@ const Home = () => {
                 こうした遅れは学生たちにも影響を与えます。海外における一部の国では、学校運営DX化だけでなく、積極的に学生たちがITツールに触れる機会が増え、効率的に学校生活や学習に役立てています。
               </li>
               <li>
-                SCHOOL Lineは、教育現場の効率化という恒久的な問題のみならず、学生たちが自主的にITツールにふれ、より学校生活に活用してもらうためのトータルコ<br className='hidden lg:block' />
-                ミュニケーションツールです。こうした問題に対する解決と学生たちの成長の一助となることを願っています。
+                SCHOOL Lineは、教育現場の効率化という恒久的な問題のみならず、学生たちが自主的にITツールにふれ、より学校生活に活用してもらうためのトータルコミュニケーションツールです。こうした問題に対する解決と学生たちの成長の一助となることを願っています。
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section className={`bg-green-08 h-[306px] md:h-[522px] lg:h-[600px] px-[65px] pt-[69px] pb-24 md:pt-[118px] lg:pt-[136px] flex flex-col items-center bg-no-repeat bg-[bottom_left] bg-[url(/src/assets/images/contact_us_bg_375.svg)] md:bg-[url(/src/assets/images/contact_us_bg_640.svg)] lg:bg-[url(/src/assets/images/contact_us_bg_1008.svg)] xl:bg-[url(/src/assets/images/contact_us_bg_1920.svg)]`}>
+      <section className={`bg-green-01 h-[306px] md:h-[522px] lg:h-[600px] px-[65px] pt-[69px] pb-24 md:pt-[118px] lg:pt-[136px] flex flex-col items-center bg-no-repeat bg-[bottom_left] bg-[url(/src/assets/images/contact_us_bg_375.svg)] md:bg-[url(/src/assets/images/contact_us_bg_640.svg)] lg:bg-[url(/src/assets/images/contact_us_bg_1008.svg)] xl:bg-[url(/src/assets/images/contact_us_bg_1920.svg)]`}>
         <strong className='text-base leading-5 md:text-[28px] md:leading-[33px] lg:text-[40px] lg:leading-[48px]'>
           無料で体験版製品をご利用ください!
         </strong>

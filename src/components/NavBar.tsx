@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { type Route, routes } from '../main';
 import { Logo_1008, Logo_1920, Logo_375, Logo_640 } from '../assets/Logo';
-import { Oreo_24, Oreo_28 } from '../assets/Oreo';
+import { Oreo_375, Oreo_640 } from '../assets/Oreo';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -17,7 +17,7 @@ const NavBar = () => {
   }, [pathname])
 
   return (
-    <nav className='flex justify-center h-12 px-6 lg:h-24 md:h-14 lg:px-9 md:px-7 shadow-[0px_4px_8px_0px_#0000000A] sticky -top-px bg-white z-20'>
+    <nav className='flex justify-center h-12 px-6 lg:h-24 md:h-[60px] lg:px-9 md:px-7 shadow-[0px_4px_8px_0px_#0000000A] sticky -top-px bg-white z-20'>
       <ul className='flex lg:w-[90rem] w-full lg:relative gap-5 xl:gap-10'>
         <li className={linkPadding}>
           <Link to={'/'}>
@@ -38,16 +38,16 @@ const NavBar = () => {
           </li>
         ))}
         <li className='hidden max-lg:list-item'>
-          <button onClick={() => setOpen((prev) => !prev)} className='absolute top-0 right-0 inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14'>
-            <Oreo_28 className='hidden md:block' />
-            <Oreo_24 className='block md:hidden' />
+          <button onClick={() => setOpen((prev) => !prev)} className='absolute top-0 right-0 inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-gray-01'>
+            <Oreo_640 className='hidden md:block' />
+            <Oreo_375 className='block md:hidden' />
           </button>
         </li>
       </ul>
       {
         open &&
         createPortal(
-          <ul className='absolute w-full bg-white/[.96] md:top-14 top-12 pt-[3px] md:pt-1'>
+          <ul className='absolute w-full bg-white/[.98] md:top-14 top-12 pt-[3px] md:pt-1 shadow-[0px_4px_12px_0px_#0000000A]'>
             {filteredRoutes.map((route) =>
               <li key={route.path} className='md:text-lg md:leading-5 leading-[18px] text-sm md:py-4 py-3 md:px-6 px-5 border-b-[0.4px] border-b-neutral-300 last-of-type:border-b-0'>
                 <Link to={route.path} className='inline-flex items-center h-8'>{route.title}</Link>
