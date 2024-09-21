@@ -17,7 +17,7 @@ const NavBar = () => {
   }, [pathname])
 
   return (
-    <nav className='flex justify-center h-12 px-6 lg:h-24 md:h-14 lg:px-9 md:px-7 shadow-[0px_4px_8px_0px_#0000000A]'>
+    <nav className='flex justify-center h-12 px-6 lg:h-24 md:h-14 lg:px-9 md:px-7 shadow-[0px_4px_8px_0px_#0000000A] sticky top-0 bg-white'>
       <ul className='flex lg:w-[90rem] w-full lg:relative gap-5 xl:gap-10'>
         <li className={linkPadding}>
           <Link to={'/'}>
