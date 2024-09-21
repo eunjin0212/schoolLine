@@ -10,9 +10,9 @@ const Plan = () => {
   const plans = [
     {
       name: 'FREE' as const,
-      titleClass: '!bg-green-02',
+      titleClass: '!bg-green-07',
       description: '体験版として使用',
-      scopeClass: '!bg-green-08',
+      scopeClass: '!bg-green-01',
       icons: [
         <FreePlan_375 className='block md:hidden' />,
         <FreePlan_640 className='hidden md:block' />,

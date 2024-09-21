@@ -32,7 +32,7 @@ const NavBar = () => {
           <li key={route.path} className={[
             linkPadding,
             'hidden text-nowrap text-base leading-5 font-medium lg:inline-flex lg:items-center lg:justify-center min-w-[6.25rem]',
-            pathname === route.path && 'transition-all relative before:w-full before:h-1 before:bg-green-02 before:absolute before:bottom-0'
+            pathname === route.path && 'transition-all relative before:w-full before:h-1 before:bg-green-07 before:absolute before:bottom-0'
           ].join(' ')}>
             <Link to={route.path}>{route.title}</Link>
           </li>

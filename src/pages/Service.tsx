@@ -325,7 +325,7 @@ const Service = () => {
                   </p>
                 }
                 <span className={`
-                rounded-3xl md:rounded-[40px] py-2 md:py-4 px-3 md:px-5 text-sm md:text-xl lg:text-2xl leading-[14px] md:leading-6 lg:leading-7 mt-7 md:mt-12 lg:mt-14 block mx-auto lg:mx-0 w-fit bg-green-06 -tracking-[0.01em]
+                rounded-3xl md:rounded-[40px] py-2 md:py-4 px-3 md:px-5 text-sm md:text-xl lg:text-2xl leading-[14px] md:leading-6 lg:leading-7 mt-7 md:mt-12 lg:mt-14 block mx-auto lg:mx-0 w-fit bg-green-03 -tracking-[0.01em]
               `}>
                   {service.label}
                 </span>
