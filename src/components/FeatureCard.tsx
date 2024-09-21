@@ -17,7 +17,7 @@ const FeatureCard = ({ description, icons, className }: FeatureCardProps) => (
     <span className={[
       `text-xs leading-[18px] 
       md:text-[15px] md:leading-[22px]
-      font-medium text-gray-10 text-center`,
+      font-medium text-gray-11 text-center`,
       className,
     ].join(' ')}>
       {description}

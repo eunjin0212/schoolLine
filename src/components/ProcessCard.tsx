@@ -16,7 +16,7 @@ const ProcessCard = ({ idx, title, description }: ProcessCardProps) => {
     <strong className={`
       text-[28px] leading-[34px]
       md:text-[50px] md:leading-[60px]
-      text-purple-01
+      text-purple-05
     `}>{step}</strong>
     <ul>
       <li className={`

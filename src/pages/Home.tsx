@@ -8,7 +8,7 @@ import aboutSchoolLine_1008 from '../assets/images/about_school_line_1008.svg'
 import aboutSchoolLine_1920 from '../assets/images/about_school_line_1920.svg'
 import { RightArrow_16, RightArrow_26, RightArrow_28 } from '../assets/RightArrow'
 import { Feature1_1_375, Feature1_1_640, Feature1_2_375, Feature1_2_640, Feature1_3_375, Feature1_3_640 } from '../assets/Feature1'
-import { Feature2_1_375, Feature2_2_375, Feature2_2_640, Feature2_3_375, Feature2_3_640 } from '../assets/Feature2'
+import { Feature2_1_375, Feature2_1_640, Feature2_2_375, Feature2_2_640, Feature2_3_375, Feature2_3_640 } from '../assets/Feature2'
 import { Feature3_1_375, Feature3_1_640, Feature3_2_375, Feature3_2_640, Feature3_3_375, Feature3_3_640 } from '../assets/Feature3'
 import { Feature4_1_375, Feature4_1_640, Feature4_2_375, Feature4_2_640, Feature4_3_375, Feature4_3_640 } from '../assets/Feature4'
 import { Vision_375, Vision_640 } from '../assets/Vision'
@@ -60,7 +60,7 @@ const Home = () => {
         {
           icons: [
             <Feature2_1_375 className='mb-[19px] block md:hidden' />,
-            <Feature2_3_640 className='mb-[43px] hidden md:block' />,
+            <Feature2_1_640 className='mb-[43px] hidden md:block' />,
           ],
           description: '先生の業務管理',
         },
@@ -154,7 +154,7 @@ const Home = () => {
               </p>
             </div>
             <Link to='/content' className={
-              `h-[52px] rounded-[26px] text-sm leading-4 px-[22px] gap-2 font-bold text-white bg-purple-02 inline-flex justify-center items-center 
+              `h-[52px] rounded-[26px] text-sm leading-4 px-[22px] gap-2 font-bold text-white bg-purple-04 inline-flex justify-center items-center 
             md:h-[88px] md:rounded-[44px] md:text-2xl md:leading-[30px] md:px-[38px] md:gap-[14px] 
             lg:h-[89px] 
             xl:h-[100px] xl:rounded-[50px] xl:text-[28px] xl:leading-[22px] xl:gap-4`
@@ -182,7 +182,7 @@ const Home = () => {
             md:round-[45px_45px_146px_45px] md:h-[346px] md:w-[480px] md:p-[78px] md:pr-[68px] md:pb-[75px]
             lg:round-[56px_56px_180px_56px] lg:h-[428px] lg:w-[589px] lg:pt-[100px] lg:pl-24 lg:pr-[83px] lg:pb-[91px]
             `}>
-            <p className={`text-lg leading-[21px] mb-6 text-purple-02 font-extrabold 
+            <p className={`text-lg leading-[21px] mb-6 text-purple-04 font-extrabold 
               md:text-[29px] md:leading-[34px] md:mb-10
               lg:text-4xl lg:leading-[49px] lg:mb-11
               `}>SCHOOL Lineとは？</p>
@@ -191,7 +191,7 @@ const Home = () => {
             </p>
           </div>
           <div className={
-            `top-5 left-5 rounded-[20px] w-[292px] h-[535px] pt-52 shadow-[0px_0.34px_6.72px_0px_#00000014] absolute border-2 border-white bg-[#FFFFFFCC]
+            `top-5 left-5 rounded-[20px] w-[292px] h-[535px] pt-52 shadow-[0px_0.34px_6.72px_0px_#00000014] absolute border-2 border-white bg-[#E7F3CC]
             md:top-[34px] md:left-[34px] md:rounded-3xl md:w-[518px] md:h-[912px] md:pt-[360px] md:shadow-[0px_0.57px_11.45px_0px_#00000014]
             lg:rounded-[44px] lg:w-[870px] lg:h-[1350px] lg:pt-[458px] lg:shadow-[0px_1px_20px_0px_#00000014]
             xl:w-[1398px] xl:h-[800px] xl:flex xl:pt-16 xl:justify-between
@@ -229,7 +229,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className='bg-green-01 h-[1125px] md:h-[1954px] lg:h-[2147px] xl:h-[1414px] pt-[72px] md:pt-[121px] lg:pt-[218px] xl:pt-[218px]'>
+      <section className='bg-green-04 h-[1125px] md:h-[1954px] lg:h-[2147px] xl:h-[1414px] pt-[72px] md:pt-[121px] lg:pt-[218px] xl:pt-[218px]'>
         <div className='flex flex-col items-center justify-center w-full md:w-[552px] lg:w-[870px] xl:w-[1398px] gap-3 mb-10 md:items-start md:mx-auto md:mb-[82px] xl:mb-[138px]'>
           <h1 className='text-2xl leading-7 md:text-[40px] md:leading-[48px] lg:text-[40px] lg:leading-[48px] font-semibold'>
             SCHOOL Lineの特徴
@@ -239,7 +239,7 @@ const Home = () => {
         <div className='w-[342px] md:w-[552px] lg:w-[640px] xl:w-[1360px] mx-auto flex flex-col gap-10 md:gap-20 lg:gap-[60px] xl:gap-x-20 xl:gap-y-[104px] xl:grid xl:grid-cols-2'>
           {features.map((feature, index) =>
             <div key={`container_${index}`} className='flex flex-col gap-3 md:gap-8 xl:gap-10'>
-              <p className='h-8 md:h-[60px] px-4 md:px-6 lg:px-[22px] text-sm leading-4 md:text-[28px] md:leading-[33px] rounded-lg md:rounded-xl bg-green-04 font-semibold inline-flex items-center'>{feature.title}</p>
+              <p className='h-8 md:h-[60px] px-4 md:px-6 lg:px-[22px] text-sm leading-4 md:text-[28px] md:leading-[33px] rounded-lg md:rounded-xl bg-green-02 font-semibold inline-flex items-center'>{feature.title}</p>
               <ul key={`${feature.title}_${index}`} className='grid gap-[6px] lg:gap-5 grid-cols-3 h-[148px] md:h-[240px] lg:h-[260px]'>
                 {feature.children.map((child, childIdx) =>
                   <FeatureCard key={`${child.description}_${childIdx}`} {...child} />
@@ -290,7 +290,7 @@ const Home = () => {
           O일간 무료로 제품을 이용하실 수 있습니다.
         </span>
         <Link
-          className='rounded-3xl md:rounded-[44px] lg:rounded-[50px] w-[212px] md:w-[364px] lg:w-[420px] h-[52px] md:h-[88px] lg:h-[100px] text-sm md:text-2xl lg:text-[28px] leading-4 md:leading-[30px] lg:leading-[33px] font-bold inline-flex items-center justify-center bg-purple-02 text-white'
+          className='rounded-3xl md:rounded-[44px] lg:rounded-[50px] w-[212px] md:w-[364px] lg:w-[420px] h-[52px] md:h-[88px] lg:h-[100px] text-sm md:text-2xl lg:text-[28px] leading-4 md:leading-[30px] lg:leading-[33px] font-bold inline-flex items-center justify-center bg-purple-04 text-white'
           to='/content'
         >
           お問い合わせ

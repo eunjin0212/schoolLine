@@ -32,7 +32,7 @@ const ContactCard = ({ title, description, button, buttonPath }: ContactCardProp
         mt-7 w-[178px] py-2 rounded-[30px] text-xs leading-[14px]
         md:mt-[23px] md:w-[304px] md:py-[14px] md:rounded-[52px] md:text-xl md:leading-6
         lg:mt-10
-        inline-flex justify-center font-bold text-white bg-purple-01
+        inline-flex justify-center font-bold text-white bg-purple-05
       `}
         to={buttonPath}
       >

@@ -42,7 +42,7 @@ const PlanCard = ({ value, name, titleIcon, titleClass, icons, description, scop
       <strong className={[
         `text-xs leading-[14px] h-[37px] rounded-t-[13px]
         md:text-xl md:leading-[23px] md:h-[63px] md:rounded-t-3xl
-        flex justify-center items-center tracking-[0.04em] text-white bg-gray-09 absolute w-full left-0 top-0`,
+        flex justify-center items-center tracking-[0.04em] text-white bg-gray-10 absolute w-full left-0 top-0`,
         titleClass
       ].join(' ')}>
         {name}
@@ -55,7 +55,7 @@ const PlanCard = ({ value, name, titleIcon, titleClass, icons, description, scop
         md:text-base md:leading-5 md:mb-8
         font-medium text-center`}>{description}</p>
       <ul className={[`
-        rounded-lg py-3 px-4 bg-purple-04/[0.26]
+        rounded-lg py-3 px-4 bg-purple-02/[0.26]
         md:rounded-xl md:py-5 md:px-[26px]`, scopeClass
       ].join(' ')}>
         {scopes.map(scope =>

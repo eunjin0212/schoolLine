@@ -35,7 +35,7 @@ const Business = () => {
             mb-[18px] text-lg leading-5 pt-7
             md:mb-[14px] md:text-[28px] md:leading-9 md:pt-[76px]
             lg:mb-7 lg:leading-[34px] lg:pt-[68px]
-            font-bold text-center
+            font-bold text-center text-purple-06
           `}>
             SCHOOL Line 導入される過程
           </h2>

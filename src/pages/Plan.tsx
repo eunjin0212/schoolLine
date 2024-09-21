@@ -84,7 +84,7 @@ const Plan = () => {
             md:mb-7 md:text-[28px] md:leading-[34px] md:pt-[68px]
             font-bold text-center
           `}>
-          SCHOOL Line利用プラン
+          SCHOOL Line 利用プラン
         </h2>
         <p className={`
             w-[260px] text-xs leading-[18px] pb-5

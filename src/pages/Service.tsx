@@ -291,9 +291,9 @@ const Service = () => {
         <>
           <h2 className={`
             w-[274px] mb-2 text-lg leading-5 pt-6
-            md:w-[468px] md:mb-[14px] md:text-[32px] md:leading-9 md:pt-[42px]
+            md:w-[468px] md:mb-[14px] md:text-[28px] md:leading-9 md:pt-[42px]
             lg:w-[630px] lg:mb-7 lg:leading-[48px] lg:pt-[61px]
-            font-bold text-center
+            font-bold text-center text-purple-06
           `}>
             SCHOOL Lineは先生と学生、保護者がコミュニケーションを円滑にサポートします。
           </h2>
@@ -325,7 +325,7 @@ const Service = () => {
                   </p>
                 }
                 <span className={`
-                rounded-3xl md:rounded-[40px] py-2 md:py-4 px-3 md:px-5 text-sm md:text-xl lg:text-2xl leading-[14px] md:leading-6 lg:leading-7 mt-7 md:mt-12 lg:mt-14 block mx-auto lg:mx-0 w-fit bg-green-03 -tracking-[0.01em]
+                rounded-3xl md:rounded-[40px] py-2 md:py-4 px-3 md:px-6 text-sm md:text-xl lg:text-2xl leading-[14px] md:leading-6 lg:leading-7 mt-7 md:mt-12 lg:mt-14 block mx-auto lg:mx-0 w-fit bg-green-03 -tracking-[0.01em]
               `}>
                   {service.label}
                 </span>
@@ -342,14 +342,14 @@ const Service = () => {
           )}
         </div>
       </section>
-      <section className='py-8 md:py-[72px] bg-gray-01 h-fit'>
+      <section className='py-8 md:py-[72px] bg-gray-05 h-fit'>
         <ul className='w-fit mx-auto rounded-lg md:rounded-[10px] lg:rounded-[15px] flex flex-col border-[0.10px] overflow-hidden shadow-[0px_0.29px_6px_0px_#0000001F] bg-white'>
           <li className='flex w-full'>
             {columns.map(col =>
               <div
                 key={col.label}
                 className={[
-                  'inline-flex items-center bg-purple-01 text-white font-semibold text-[4px] leading-[5px] md:text-xs lg:text-base border-r-[0.10px] last-of-type:border-r-0 border-gray-06',
+                  'inline-flex items-center bg-purple-05 text-white font-semibold text-[4px] leading-[5px] md:text-xs lg:text-base border-r-[0.10px] last-of-type:border-r-0 border-gray-06',
                   col.align,
                   'py-[6px] md:py-[14px] xl:py-6 px-[9px] md:px-[7px] lg:px-6 xl:px-8',
                   col.className,

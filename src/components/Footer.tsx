@@ -5,7 +5,7 @@ import { type Route, routes } from '../main'
 const Footer = () => {
   const links = routes.children.filter((route) => route.title) as Route[]
   return (
-    <footer className='bg-gray-04 h-[252px] md:h-[300px]'>
+    <footer className='bg-gray-05 h-[252px] md:h-[300px] border-t border-[#CECECE]'>
       <div className='w-[322px] md:w-[528px] lg:w-[936px] xl:w-[1440px] mx-auto flex flex-col gap-[34px] pt-[27px] md:pt-12 md:gap-[22px] lg:gap-[88px] xl:pt-12'>
         <div className='flex justify-between'>
           <Logo_375 className='block md:hidden' />
@@ -18,7 +18,7 @@ const Footer = () => {
             )}
           </ul>
         </div>
-        <p className='text-xs leading-[14px] font-medium text-right text-gray-05'>Copyright ©Knowlegeshare Co., Ltd.</p>
+        <p className='text-xs leading-[14px] font-medium text-right text-gray-08'>Copyright ©Knowlegeshare Co., Ltd.</p>
       </div>
     </footer>
   )

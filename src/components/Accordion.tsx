@@ -42,7 +42,7 @@ const Accordion = ({ question, answer }: AccordionProps) => {
       >
         <div className='flex items-start p-4 md:p-7'
         >
-          <strong className={['bg-green-05', badgeClassName].join(' ')}>
+          <strong className={['bg-green-05 text-white', badgeClassName].join(' ')}>
             A
           </strong>
           <div className='flex-1 text-xs leading-[18px] md:text-base md:leading-8' dangerouslySetInnerHTML={{ __html: answer }}>

@@ -85,17 +85,17 @@ const Content = () => {
       <>
         <h2 className={`
             mb-[18px] text-base leading-5 pt-[37px]
-            md:mb-7 md:text-[28px] md:leading-[34px] md:pt-[68px]
-            font-bold text-center
+            md:mb-6 md:text-[28px] md:leading-[34px] md:pt-[60px]
+            font-bold text-center text-purple-06
           `}>
           SCHOOL Line 利用 / 質問お問い合わせ
         </h2>
         <p className={`
             w-[260px] text-xs leading-[18px] pb-5
-            md:w-[442px] md:text-[18px] md:leading-[30px] md:pb-[32px]
+            md:w-[442px] md:text-[18px] md:leading-[30px] md:pb-[41px]
             lg:pb-[30px]
-            xl:w-full xl:pb-[68px]
-            text-center -tracking-[0.04em] text-gray-08 font-medium
+            xl:w-full
+            text-center -tracking-[0.04em] text-gray-09 font-medium
           `}>
           スクールラインを通じて先生と学生、両親とのコミュニケーションを円滑にすることができます
         </p>
@@ -139,7 +139,7 @@ const Content = () => {
           <strong className='text-xs md:text-sm leading-[14px] md:leading-4 mb-[9px] md:mb-4'>お問い合わせ前にご確認ください</strong>
           <p className='text-xs md:text-sm leading-[18px] md:leading-5 lg:leading-6'>お問い合わせの内容によっては、お返事にお時間をいただく場合がございます。あらかじめご了承くださいますようお願いいたします。ご入力メールアドレスに誤りがある場合や受信設定されていない場合は、返信できかねます。お手数ですが、送信前に今一度ご確認をお願いします。</p>
         </div>
-        <div className='py-[18px] px-5 md:p-8 rounded-[7px] md:rounded-xl mb-9 md:mb-16 mx-auto xl:mx-0 bg-purple-05'>
+        <div className='py-[18px] px-5 md:p-8 rounded-[7px] md:rounded-xl mb-9 md:mb-16 mx-auto xl:mx-0 bg-purple-01'>
           <strong className='text-xs md:text-sm leading-[14px] md:leading-4 mb-[9px] md:mb-4'>個人情報の取り扱いについて</strong>
           <div className='text-xs md:text-sm leading-[18px] md:leading-5 lg:leading-6'>
             当社は、個人情報保護に関する法律及びその他の関連法令等を遵守し、管理責任者の下で厳重なセキュリティ対策を実施し、適正に個人情報を管理しています。<br />
@@ -160,7 +160,7 @@ const Content = () => {
             </ul>
           </div>
         </div>
-        <button className='h-9 md:h-[52px] w-[210px] md:w-[360px] rounded-[30px] md:rounded-[52px] text-xs md:text-xl leading-[14px] md:leading-6 mx-auto font-bold text-white bg-purple-01'>個人情報の取扱いに同意して提出</button>
+        <button className='h-9 md:h-[52px] w-[210px] md:w-[360px] rounded-[30px] md:rounded-[52px] text-xs md:text-xl leading-[14px] md:leading-6 mx-auto font-bold text-white bg-purple-05'>個人情報の取扱いに同意して提出</button>
       </form>
     </section>
   </main>)

@@ -6,11 +6,12 @@ interface PageHeaderSectionProps {
 }
 
 const PageHeaderSection = ({ title, children }: PageHeaderSectionProps) => (
-  <section className='h-[305px] md:h-[521px] lg:h-[560px] bg-purple-02 flex items-end justify-center'>
+  <section className='h-[232px] md:h-[500px] lg:h-[480px] xl:h-[439px] bg-purple-04 flex items-end justify-center'>
     <div className='w-[342px] md:w-[584px] lg:w-[896px] xl:w-[1440px]'>
       <h1 className={`
         text-2xl leading-7 
-        md:text-[40px] md:leading-[48px] 
+        md:text-[40px] md:leading-[48px]
+        xl:tracking-widest
         font-extrabold tracking-widest text-white
       `}>
         {title}
