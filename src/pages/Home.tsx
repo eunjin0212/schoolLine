@@ -153,7 +153,7 @@ const Home = () => {
                 効率的な学校運営の実現
               </p>
             </div>
-            <Link to='/plan' className={
+            <Link to='/content' className={
               `h-[52px] rounded-[26px] text-sm leading-4 px-[22px] gap-2 font-bold text-white bg-purple-02 inline-flex justify-center items-center 
             md:h-[88px] md:rounded-[44px] md:text-2xl md:leading-[30px] md:px-[38px] md:gap-[14px] 
             lg:h-[89px] 
