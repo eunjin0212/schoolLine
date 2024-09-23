@@ -79,7 +79,7 @@ const Content = () => {
             title='お問い合わせからすぐに使ってみてください'
             description='スクールラインを通じて先生と学生'
             button='お問い合わせ'
-            buttonPath='/content'
+            buttonPath='/business'
           />
         </div>
       </section>

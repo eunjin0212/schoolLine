@@ -153,7 +153,7 @@ const Home = () => {
                 効率的な学校運営の実現
               </p>
             </div>
-            <Link to='/content' className={
+            <Link to='/business' className={
               `h-[52px] rounded-[26px] text-sm leading-4 px-[22px] gap-2 font-bold text-white bg-purple-04 inline-flex justify-center items-center 
             md:h-[88px] md:rounded-[44px] md:text-2xl md:leading-[30px] md:px-[38px] md:gap-[14px] 
             lg:h-[89px] 
@@ -291,7 +291,7 @@ const Home = () => {
         </span>
         <Link
           className='rounded-3xl md:rounded-[44px] lg:rounded-[50px] w-[212px] md:w-[364px] lg:w-[420px] h-[52px] md:h-[88px] lg:h-[100px] text-sm md:text-2xl lg:text-[28px] leading-4 md:leading-[30px] lg:leading-[33px] font-bold inline-flex items-center justify-center bg-purple-04 text-white'
-          to='/content'
+          to='/business'
         >
           お問い合わせ
         </Link>

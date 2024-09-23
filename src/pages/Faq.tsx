@@ -39,7 +39,7 @@ const Faq = () => {
           title='他に質問はありますか？'
           description='学校に導入したい方、使用方法を知りたい方、どんな質問でもお気軽にお問い合わせください'
           button='お問い合わせ'
-          buttonPath='/content'
+          buttonPath='/business'
         />
       </div>
     </main>
