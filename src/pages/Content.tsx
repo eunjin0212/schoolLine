@@ -4,7 +4,7 @@ import ContactCard from '../components/ContactCard'
 import PageHeaderSection from '../components/PageHeaderSection'
 import ProcessCard from '../components/ProcessCard'
 
-const Business = () => {
+const Content = () => {
   const processes = [
     {
       title: 'お問い合わせページから<br class="block md:hidden" />フォー<br class="hidden md:block lg:hidden" />ムを作成',
@@ -87,4 +87,4 @@ const Business = () => {
   )
 }
 
-export default Business
+export default Content

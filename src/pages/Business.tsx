@@ -2,7 +2,7 @@ import { useState, type FormEvent } from 'react'
 import PageHeaderSection from '../components/PageHeaderSection'
 import Field, { type FieldProps } from '../components/Field'
 
-const Content = () => {
+const Business = () => {
   const [formValue, setFormValue] = useState({
     companyName: '',
     lastName: '',
@@ -166,4 +166,4 @@ const Content = () => {
   </main>)
 }
 
-export default Content
+export default Business

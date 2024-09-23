@@ -9,9 +9,9 @@ import './index.css'
 import Layout from './components/Layout';
 import Service from './pages/Service';
 import Faq from './pages/Faq';
-import Content from './pages/Business';
+import Business from './pages/Business';
 import Plan from './pages/Plan';
-import Business from './pages/Content';
+import Content from './pages/Content';
 import Home from './pages/Home';
 
 export interface Route {
