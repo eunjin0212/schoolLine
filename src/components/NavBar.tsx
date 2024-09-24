@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <header className='sticky z-50 -top-px'>
-      <nav className='absolute z-30 flex justify-center h-12 px-6 lg:h-24 md:h-[60px] lg:px-9 md:px-7 shadow-[0px_4px_8px_0px_#0000000A] w-full bg-white '>
+      <nav className='absolute z-30 flex justify-center h-12 md:h-[60px] lg:h-24 px-6 lg:px-9 md:px-7 shadow-[0px_4px_8px_0px_#0000000A] w-full bg-white '>
         <ul className='flex lg:w-[90rem] w-full lg:relative gap-5 xl:gap-10'>
           <li className={linkPadding}>
             <Link to={'/'}>

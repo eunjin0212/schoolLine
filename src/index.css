@@ -11,3 +11,7 @@
 body {
   position: relative;
 }
+
+main {
+  @apply pt-12 md:pt-[60px] lg:pt-24
+}
