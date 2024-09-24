@@ -12,20 +12,6 @@ import { StudyPlanningSupport_375, StudyPlanningSupport_640 } from '../assets/St
 const Service = () => {
   const services = [
     {
-      title: '報告・申告',
-      titleIcons: [
-        <ReportingTitle_375 className='block md:hidden' />,
-        <ReportingTitle_640 className='hidden md:block lg:hidden' />,
-        <ReportingTitle_1008 className='hidden lg:block' />,
-      ],
-      label: '端末を通じた出欠・体調報告',
-      description: '家庭からの連絡はスクールラインを通じてシステムに自動登録。<br /> 出欠のみならず、体調報告機能により生徒の体調管理と学校でどのような病気が流行<br class="hidden xl:block" />っているのか統計的に把握が可能で、事前予防対策が取れます（コロナ・食中毒など）',
-      icons: [
-        <Reporting_375 className='block md:hidden' />,
-        <Reporting_640 className='hidden md:block' />,
-      ],
-    },
-    {
       title: 'コミュニケーション',
       titleIcons: [
         <CommunicationTitle_375 className='block md:hidden' />,
@@ -63,6 +49,20 @@ const Service = () => {
       icons: [
         <StudyPlanningSupport_375 className='block md:hidden' />,
         <StudyPlanningSupport_640 className='hidden md:block' />,
+      ],
+    },
+    {
+      title: '報告・申告',
+      titleIcons: [
+        <ReportingTitle_375 className='block md:hidden' />,
+        <ReportingTitle_640 className='hidden md:block lg:hidden' />,
+        <ReportingTitle_1008 className='hidden lg:block' />,
+      ],
+      label: '端末を通じた出欠・体調報告',
+      description: '家庭からの連絡はスクールラインを通じてシステムに自動登録。<br /> 出欠のみならず、体調報告機能により生徒の体調管理と学校でどのような病気が流行<br class="hidden xl:block" />っているのか統計的に把握が可能で、事前予防対策が取れます（コロナ・食中毒など）',
+      icons: [
+        <Reporting_375 className='block md:hidden' />,
+        <Reporting_640 className='hidden md:block' />,
       ],
     },
   ]
