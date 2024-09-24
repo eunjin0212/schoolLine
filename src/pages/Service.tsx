@@ -1,12 +1,13 @@
 import { Fragment } from 'react'
 import { ReportingTitle_375, ReportingTitle_640, ReportingTitle_1008 } from '../assets/ReportingTitle'
 import { CommunicationTitle_375, CommunicationTitle_640 } from '../assets/CommunicationTitle'
-import { StudyPlanningSupport_375, StudyPlanningSupport_640 } from '../assets/StudyPlanningSupport'
+import { StudyPlanningSupportTitle_375, StudyPlanningSupportTitle_640 } from '../assets/StudyPlanningSupportTitle'
 import { Reporting_375, Reporting_640 } from '../assets/Reporting'
 import { Communication_375, Communication_640 } from '../assets/Communication'
 import { SecurityTitle_375, SecurityTitle_640 } from '../assets/SecurityTitle'
 import { Security_375, Security_640 } from '../assets/Security'
 import PageHeaderSection from '../components/PageHeaderSection'
+import { StudyPlanningSupport_375, StudyPlanningSupport_640 } from '../assets/StudyPlanningSupport'
 
 const Service = () => {
   const services = [
@@ -54,14 +55,14 @@ const Service = () => {
     {
       title: '学事・学習計画支援',
       titleIcons: [
-        <StudyPlanningSupport_375 className='block md:hidden' />,
-        <StudyPlanningSupport_640 className='hidden md:block' />
+        <StudyPlanningSupportTitle_375 className='block md:hidden' />,
+        <StudyPlanningSupportTitle_640 className='hidden md:block' />
       ],
       label: 'ToDo管理による学習計画',
       description: "プロジェクトやToDo管理による学事イベントに対して計画性と生 徒個人のタスクを管理することができます。文化祭、体育祭、委員会活動をサポートします。<br class='hidden lg:block' />ToDoには学習計画を作成することができます。<br class='hidden lg:block' />定期試験や受験に対する準備期間を自ら組み立ててそれを実践することをサポートし<br class='hidden lg:block' />ます。こうした計画のナレッジは後輩たちへと引き継がれ、進学に成功した先輩の学<br class='hidden lg:block' />習計画を模倣することにより、効率的な学習計画を組み立てることも可能です。",
       icons: [
-        <Reporting_375 className='block md:hidden' />,
-        <Reporting_640 className='hidden md:block' />,
+        <StudyPlanningSupport_375 className='block md:hidden' />,
+        <StudyPlanningSupport_640 className='hidden md:block' />,
       ],
     },
   ]
