@@ -49,7 +49,7 @@ const NavBar = () => {
         <ul className='absolute z-10 w-full bg-white/[.98] md:top-14 top-12 pt-[3px] md:pt-1 shadow-[0px_4px_12px_0px_#0000000A]'>
           {filteredRoutes.map((route) =>
             <li key={route.path} className='md:text-lg md:leading-5 leading-[18px] text-sm md:py-4 py-3 md:px-6 px-5 border-b-[0.4px] border-b-neutral-300 last-of-type:border-b-0'>
-              <Link to={route.path} className='inline-flex items-center h-8'>{route.title}</Link>
+              <Link to={route.path} className='inline-flex items-center w-full h-8'>{route.title}</Link>
             </li>
           )}
         </ul>
