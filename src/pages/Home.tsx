@@ -287,7 +287,7 @@ const Home = () => {
           無料で体験版製品をご利用ください!
         </strong>
         <span className='text-xs leading-[14px] mt-[17px] mb-[39px] md:text-xl md:leading-6 md:mt-7 md:mb-16 lg:text-2xl lg:leading-7 lg:mt-6 lg:mb-[72px]'>
-          O일간 무료로 제품을 이용하실 수 있습니다.
+          学校に導入したい方、使用方法を知りたい方、どんな質問でもお気軽にお問い合わせください
         </span>
         <Link
           className='rounded-3xl md:rounded-[44px] lg:rounded-[50px] w-[212px] md:w-[364px] lg:w-[420px] h-[52px] md:h-[88px] lg:h-[100px] text-sm md:text-2xl lg:text-[28px] leading-4 md:leading-[30px] lg:leading-[33px] font-bold inline-flex items-center justify-center bg-purple-04 text-white'
