@@ -1,80 +1,77 @@
-import { FreePlan_375, FreePlan_640 } from '../assets/FreePlan'
-import { BasicPlan_375, BasicPlan_640 } from '../assets/BasicPlan'
-import { ProPlan_375, ProPlan_640 } from '../assets/ProPlan'
 import PageHeaderSection from '../components/PageHeaderSection'
 import PlanCard from '../components/PlanCard'
 import ContactCard from '../components/ContactCard'
-import { useState } from 'react'
 
 const Plan = () => {
   const plans = [
     {
-      name: 'FREE' as const,
+      name: 'Free' as const,
       titleClass: '!bg-green-07',
-      description: '体験版として使用',
+      description: 'UCWORKSをテスト使用しようとする顧客企業として60日使用制限',
       scopeClass: '!bg-green-01',
-      icons: [
-        <FreePlan_375 className='block md:hidden' />,
-        <FreePlan_640 className='hidden md:block' />,
-      ],
+      price: 0,
       scopes: [
-        '메시지 보기: 최근 40일 이내',
-        '사용자 수: 최대 100명/조직',
-        '스토리지: 10GB/조직',
-        '연락처 수: 조직 외부 20명/1 사용자',
-        '채팅/작업 관리/파일 관리',
-        '화상 통화/음성 통화: 1대 1',
-        '사용자 관리',
+        {
+          title: 'ユーザー数 / ストレージ容量 / アップロード容量',
+          list: [
+            '100人のユーザー数',
+            '5GB 基本提供',
+            '0MBファイルアップロード制限',
+          ]
+        },
+        {
+          title: '提供機能',
+          list: [
+            '組織図.',
+            'オンライン状態',
+            'メモ',
+            '対話',
+            'ファイル転送',
+            '最大10人/ 60分制限テレビ会議',
+            'Zoom会議',
+            '1つのワークスペース掲示板を作成',
+            'スケジュール管理',
+            'すべき仕事',
+            '1つのプロジェクト作成',
+            '資源予約',
+            '会話、メモ、ファイル翻訳',
+          ]
+        }
       ],
     },
     {
-      name: 'BASIC' as const,
-      titleIcon: true,
-      description: '本格的に多くの機能を使用可能',
-      icons: [
-        <BasicPlan_375 className='block md:hidden' />,
-        <BasicPlan_640 className='hidden md:block' />,
-      ],
+      name: 'Standard' as const,
+      description: 'ワークスペースの円滑なコミュニケーションと協業のためのサービスをご希望のお客様',
+      price: 600,
       scopes: [
-        '메시지 보기: 최근 40일 이내',
-        '사용자 수: 최대 100명/조직',
-        '스토리지: 10GB/조직',
-        '연락처 수: 조직 외부 20명/1 사용자',
-        '채팅/작업 관리/파일 관리',
-        '화상 통화/음성 통화: 1대 1',
-        '사용자 관리',
+        {
+          title: 'ユーザー数 / ストレージ容量 / アップロード容量',
+          list: [
+            'ユーザー数 無制限',
+            '100GB 基本容量提供',
+            '1TB 100,000ウォン/月追加容量',
+            '500MBファイルアップロード制限',
+          ]
+        },
       ],
     },
     {
-      name: 'PRO' as const,
-      description: '業務に役立つすべての機能を使用',
-      icons: [
-        <ProPlan_375 className='block md:hidden' />,
-        <ProPlan_640 className='hidden md:block' />,
-      ],
+      name: 'Enterprise' as const,
+      description: '大容量でファイルを管理し、他システムとの連動を希望する顧客',
+      price: 1000,
       scopes: [
-        '메시지 보기: 최근 40일 이내',
-        '사용자 수: 최대 100명/조직',
-        '스토리지: 10GB/조직',
-        '연락처 수: 조직 외부 20명/1 사용자',
-        '채팅/작업 관리/파일 관리',
-        '화상 통화/음성 통화: 1대 1',
-        '사용자 관리',
+        {
+          title: 'ユーザー数/ ストレージ容量/ アップロード容量',
+          list: [
+            'ユーザー数 無制限',
+            '1TB 基本 容量 提供',
+            '1TB 100,000ウォン/月追加容量',
+            'ファイルアップロード容量無制限',
+          ]
+        },
       ],
     }
   ]
-
-  const initClick = {
-    FREE: false,
-    BASIC: false,
-    PRO: false,
-  }
-
-  const [isClick, setIsClick] = useState({ ...initClick })
-
-  const handleClick = (val: boolean, name: keyof typeof isClick) => {
-    setIsClick(() => ({ ...initClick, [name]: val }))
-  }
 
   return (<main>
     <PageHeaderSection title='利用プラン'>
@@ -100,10 +97,10 @@ const Plan = () => {
     <section className='pt-[60px] md:pt-[100px]'>
       <div
         className={`
-          w-[343px] px-16 py-12 rounded-3xl gap-[35px]
+          w-[343px] p-11 rounded-3xl gap-[35px]
           md:w-[584px] md:px-28 md:py-20 md:rounded-[44px] md:gap-[60px]
           lg:w-[784px] lg:px-[211px] lg:py-20
-          xl:w-[1360px] xl:flex-row xl:gap-8 xl:py-20 xl:px-[108px]
+          xl:w-[1360px] xl:flex-row xl:gap-8 xl:py-[88px] xl:px-[108px]
           bg-gray-01 flex flex-col mx-auto
         `}
       >
@@ -111,8 +108,6 @@ const Plan = () => {
           <PlanCard
             {...plan}
             key={plan.name}
-            value={isClick[plan.name]}
-            onClick={(val) => handleClick(val, plan.name)}
           />
         ))}
       </div>
