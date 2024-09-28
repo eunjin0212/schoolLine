@@ -12,6 +12,8 @@ export default {
           '05': '#501D82',
           '06': '#4A2379',
         },
+        blue: {
+        },
         green: {
           '01': '#F2FDDD',
           '02': '#ECFFC8',
@@ -36,7 +38,11 @@ export default {
           '09': '#595959',
           '10': '#343434',
           '11': '#1D1D1D',
+          '12': '#1F1F1F'
         },
+        'light-gray': {
+          '01': '#F6F8FC',
+        }
       },
       screens: {
         sm: '375px',

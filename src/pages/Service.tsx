@@ -6,8 +6,53 @@ import { Reporting_375, Reporting_640 } from '../assets/Reporting'
 import { Communication_375, Communication_640 } from '../assets/Communication'
 import { SecurityTitle_375, SecurityTitle_640 } from '../assets/SecurityTitle'
 import { Security_375, Security_640 } from '../assets/Security'
-import PageHeaderSection from '../components/PageHeaderSection'
 import { StudyPlanningSupport_375, StudyPlanningSupport_640 } from '../assets/StudyPlanningSupport'
+import { ConsultationTitle_375, ConsultationTitle_640 } from '../assets/ConsultationTitle'
+import { Consultation_375, Consultation_640 } from '../assets/Consultation'
+import schoolOrganizationChart_375 from '../assets/images/school_organization_chart_375.png'
+import schoolOrganizationChart_640 from '../assets/images/school_organization_chart_640.png'
+import message_375 from '../assets/images/message_375.png'
+import message_640 from '../assets/images/message_640.png'
+import webConferencing_375 from '../assets/images/web_conferencing_375.png'
+import webConferencing_640 from '../assets/images/web_conferencing_640.png'
+import internetChat_375 from '../assets/images/internet_chat_375.png'
+import internetChat_640 from '../assets/images/internet_chat_640.png'
+import consultationStudents_375 from '../assets/images/consultation_students_375.png'
+import consultationStudents_640 from '../assets/images/consultation_students_640.png'
+import lifeConsultation_375 from '../assets/images/life_consultation_375.png'
+import lifeConsultation_640 from '../assets/images/life_consultation_640.png'
+import arrivalAndDismissal_375 from '../assets/images/arrival_and_dismissal_375.png'
+import arrivalAndDismissal_640 from '../assets/images/arrival_and_dismissal_640.png'
+import confirmTheRecognition_375 from '../assets/images/confirm_the_recognition_375.png'
+import confirmTheRecognition_640 from '../assets/images/confirm_the_recognition_640.png'
+import schedule_375 from '../assets/images/schedule_375.png'
+import schedule_640 from '../assets/images/schedule_640.png'
+import todo_375 from '../assets/images/todo_375.png'
+import todo_640 from '../assets/images/todo_640.png'
+import project_375 from '../assets/images/project_375.png'
+import project_640 from '../assets/images/project_640.png'
+import noticeBoard_375 from '../assets/images/notice_board_375.png'
+import noticeBoard_640 from '../assets/images/notice_board_640.png'
+import reservation_375 from '../assets/images/reservation_375.png'
+import reservation_640 from '../assets/images/reservation_640.png'
+import reportAbsences_375 from '../assets/images/report_absences_375.png'
+import reportAbsences_640 from '../assets/images/report_absences_640.png'
+import linkParent_375 from '../assets/images/link_Parent_375.png'
+import linkParent_640 from '../assets/images/link_Parent_640.png'
+import map_375 from '../assets/images/map_375.png'
+import map_640 from '../assets/images/map_640.png'
+import teacherMap_375 from '../assets/images/teacher_map_375.png'
+import teacherMap_640 from '../assets/images/teacher_map_640.png'
+import stateOfMind_375 from '../assets/images/state_of_mind_375.png'
+import stateOfMind_640 from '../assets/images/state_of_mind_640.png'
+import understandingStudents_375 from '../assets/images/understanding_students_375.png'
+import understandingStudents_640 from '../assets/images/understanding_students_640.png'
+import studentPhysical_375 from '../assets/images/student_physical_375.png'
+import studentPhysical_640 from '../assets/images/student_physical_640.png'
+import studentMental_375 from '../assets/images/student_mental_375.png'
+import studentMental_640 from '../assets/images/student_mental_640.png'
+import PageHeaderSection from '../components/PageHeaderSection'
+import TagSection from '../components/TagSection'
 
 const Service = () => {
   const services = [
@@ -18,15 +63,156 @@ const Service = () => {
         <CommunicationTitle_640 className='hidden md:block' />,
       ],
       subTitle: '（チャット・メッセージ）',
-      label: 'チャットによる相談と情報共有',
+      label: '端末を通じた出欠・体調報告',
       description: '学校全体・学年・クラス・部活などあらゆる単位における <br /> グループを作成が可能で、それぞれに必要な情報を一度に共有することができます。<br class="hidden xl:block" />また、学習相談・生活相談といったチャットルームを作ることで直接相談できない悩みをチャットで相談することも可能です。',
       icons: [
         <Communication_375 className='block md:hidden' />,
         <Communication_640 className='hidden md:block' />,
       ],
+      tags: [
+        {
+          title: '学校組織図',
+          items: [
+            {
+              itemTags: ['学年別', 'クラス別', '教職員', '学生', '保護者'],
+              imgs: [
+                <img
+                  src={schoolOrganizationChart_375}
+                  alt='schoolOrganizationChart_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={schoolOrganizationChart_640}
+                  alt='schoolOrganizationChart_375'
+                  className='hidden mx-auto md:block'
+                />
+              ],
+            },
+          ],
+        },
+        {
+          title: 'メッセージ',
+          items: [
+            {
+              itemTags: ['個別', 'グループ', '通知', '受信確認', 'To,Cc,Bcc'],
+              imgs: [
+                <img
+                  src={message_375}
+                  alt='message_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={message_640}
+                  alt='message_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            },
+          ],
+        },
+        {
+          title: 'チャット',
+          items: [
+            {
+              itemTags: ['個別', 'グループ別', '既読確認'],
+              imgs: [
+                <img
+                  src={internetChat_375}
+                  alt='internetChat_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={internetChat_640}
+                  alt='internetChat_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+        {
+          title: 'Web 会議 / 授業',
+          items: [
+            {
+              itemTags: ['ホワイトボード', '録画', '議事録作成', 'オンライン授業'],
+              imgs: [
+                <img
+                  src={webConferencing_375}
+                  alt='webConferencing_375'
+                  className='block m-auto md:hidden'
+                />,
+                <img
+                  src={webConferencing_640}
+                  alt='webConferencing_640'
+                  className='hidden m-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+      ]
     },
     {
-      title: '安心・安全',
+      title: '相談',
+      titleIcons: [
+        <ConsultationTitle_375 className='block md:hidden' />,
+        <ConsultationTitle_640 className='hidden md:block' />,
+      ],
+      label: 'チャットによる相談と情報共有',
+      description: '学生たちがいつでも相談チャンネルを通じて心を分かち合うことができます。 相談教師との対話、簡単に要請可能なチャット相談を通じて学業、進路、友人関係など多様な悩みを共に解決していくことができます。',
+      icons: [
+        <Consultation_375 className='block md:hidden' />,
+        <Consultation_640 className='hidden md:block' />,
+      ],
+      tags: [
+        {
+          title: '相談チャット-学生',
+          items: [
+            {
+              itemTags: [
+                '悩み相談', '秘密相談', '既読確認',
+              ],
+              imgs: [
+                <img
+                  src={consultationStudents_375}
+                  alt='consultationStudents_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={consultationStudents_640}
+                  alt='consultationStudents_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+        {
+          title: '相談対応-学習、保健、生活',
+          items: [
+            {
+              itemTags: [
+                '相談チャンネル(学習、 保健、 生活、 いじめなど)', '相談リスト',
+              ],
+              imgs: [
+                <img
+                  src={lifeConsultation_375}
+                  alt='lifeConsultation_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={lifeConsultation_640}
+                  alt='lifeConsultation_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+      ],
+    },
+    {
+      title: '登下校',
       titleIcons: [
         <SecurityTitle_375 className='block md:hidden' />,
         <SecurityTitle_640 className='hidden md:block' />,
@@ -36,6 +222,53 @@ const Service = () => {
       icons: [
         <Security_375 className='block md:hidden' />,
         <Security_640 className='hidden md:block' />,
+      ],
+      tags: [
+        {
+          title: '登下校登録-学生',
+          items: [
+            {
+              itemTags: [
+                'ワンクリック', '登下校登録',
+              ],
+              imgs: [
+                <img
+                  src={arrivalAndDismissal_375}
+                  alt='arrivalAndDismissal_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={arrivalAndDismissal_640}
+                  alt='arrivalAndDismissal_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+        {
+          title: '登下校確認 – 保護者、先生',
+          items: [
+            {
+              itemTags: [
+                'リアルタイム通知',
+                '登下校ステータス確認,',
+              ],
+              imgs: [
+                <img
+                  src={confirmTheRecognition_375}
+                  alt='confirmTheRecognition_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={confirmTheRecognition_640}
+                  alt='confirmTheRecognition_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
       ],
     },
     {
@@ -50,9 +283,128 @@ const Service = () => {
         <StudyPlanningSupport_375 className='block md:hidden' />,
         <StudyPlanningSupport_640 className='hidden md:block' />,
       ],
+      tags: [
+        {
+          title: 'スケジュール',
+          items: [
+            {
+              itemTags: [
+                '学事イベント', '個人スケジュール', 'ToDoスケジュール',
+              ],
+              imgs: [
+                <img
+                  src={schedule_375}
+                  alt='schedule_375'
+                  className='block m-auto md:hidden'
+                />,
+                <img
+                  src={schedule_640}
+                  alt='schedule_640'
+                  className='hidden m-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+        {
+          title: 'ToDo',
+          items: [
+            {
+              itemTags: [
+                'ToDo割当て', '進行状態把握(開始前・作業中・完了)',
+              ],
+              imgs: [
+                <img
+                  src={todo_375}
+                  alt='todo_375'
+                  className='block m-auto md:hidden'
+                />,
+                <img
+                  src={todo_640}
+                  alt='todo_640'
+                  className='hidden m-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+        {
+          title: '学事プロジェクト',
+          items: [
+            {
+              itemTags: [
+                '班別、科目別、学事業務',
+                '担当者指定',
+                '進行ステータスの把握',
+              ],
+              imgs: [
+                <img
+                  src={project_375}
+                  alt='project_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={project_640}
+                  alt='project_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+        {
+          title: 'お知らせ掲示板',
+          items: [
+            {
+              itemTags: [
+                '学校全体',
+                '学年別',
+                'クラス別',
+                '掲示物',
+                '学習資料配布',
+              ],
+              imgs: [
+                <img
+                  src={noticeBoard_375}
+                  alt='noticeBoard_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={noticeBoard_640}
+                  alt='noticeBoard_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+        {
+          title: '予約',
+          items: [
+            {
+              itemTags: [
+                '会議室、 体育館、 空き教室',
+                '機材、 PCなど',
+              ],
+              imgs: [
+                <img
+                  src={reservation_375}
+                  alt='reservation_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={reservation_640}
+                  alt='reservation_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+      ],
     },
     {
-      title: '報告・申告',
+      title: '学生生活 - 報告・申告',
       titleIcons: [
         <ReportingTitle_375 className='block md:hidden' />,
         <ReportingTitle_640 className='hidden md:block lg:hidden' />,
@@ -63,6 +415,172 @@ const Service = () => {
       icons: [
         <Reporting_375 className='block md:hidden' />,
         <Reporting_640 className='hidden md:block' />,
+      ],
+      tags: [
+        {
+          title: '欠席/遅刻/早退 届出',
+          items: [
+            {
+              itemTags: [
+                '学生、保護者 – 欠席/遅刻/早退 届出',
+              ],
+              imgs: [
+                <img
+                  src={reportAbsences_375}
+                  alt='reportAbsences_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={reportAbsences_640}
+                  alt='reportAbsences_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            },
+            {
+              itemTags: [
+                '先生、保護者 – 学生 欠席/遅刻/早退 ステータス',
+              ],
+              imgs: [
+                <img
+                  src={linkParent_375}
+                  alt='linkParent_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={linkParent_640}
+                  alt='linkParent_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+        {
+          title: '現在地通知',
+          items: [
+            {
+              itemTags: [
+                '学生',
+                '災害',
+                '事故',
+                'ワンクリック',
+                '現在地送信',
+              ],
+              imgs: [
+                <img
+                  src={map_375}
+                  alt='map_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={map_640}
+                  alt='map_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            },
+            {
+              itemTags: [
+                '先生 – 現在地確認',
+                'Map',
+                'ロードビュー',
+              ],
+              imgs: [
+                <img
+                  src={teacherMap_375}
+                  alt='teacherMap_375'
+                  className='block m-auto md:hidden'
+                />,
+                <img
+                  src={teacherMap_640}
+                  alt='teacherMap_640'
+                  className='hidden m-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+        {
+          title: '心の状態',
+          items: [
+            {
+              itemTags: [
+                '学生-心の状態'
+              ],
+              imgs: [
+                <img
+                  src={stateOfMind_375}
+                  alt='reportAbsences_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={stateOfMind_640}
+                  alt='reportAbsences_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            },
+            {
+              itemTags: [
+                '先生、保護者',
+                '学生の心の状態把握',
+              ],
+              imgs: [
+                <img
+                  src={understandingStudents_375}
+                  alt='understandingStudents_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={understandingStudents_640}
+                  alt='understandingStudents_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
+        {
+          title: '体の状態',
+          items: [
+            {
+              itemTags: [
+                '学生-体の状態(発熱、咳、腹痛など)'
+              ],
+              imgs: [
+                <img
+                  src={studentPhysical_375}
+                  alt='studentPhysical_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={studentPhysical_640}
+                  alt='studentPhysical_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            },
+            {
+              itemTags: [
+                '先生、保護者',
+                '学生の心の状態把握',
+              ],
+              imgs: [
+                <img
+                  src={studentMental_375}
+                  alt='studentMental_375'
+                  className='block mx-auto md:hidden'
+                />,
+                <img
+                  src={studentMental_640}
+                  alt='studentMental_640'
+                  className='hidden mx-auto md:block'
+                />,
+              ],
+            }
+          ],
+        },
       ],
     },
   ]
@@ -308,38 +826,40 @@ const Service = () => {
           </p>
         </>
       </PageHeaderSection>
-      <section className='bg-white pb-[34px]'>
+      <section className='bg-white'>
         <div className='mt-[58px] md:mt-[100px] lg:mt-[164px] flex flex-col gap-16 lg:gap-40 items-center'>
           {services.map((service, index) =>
-            <div
-              key={`title_${index}`}
-              className='w-[343px] md:w-[584px] lg:w-[659px] xl:w-[1267px] mx-auto xl:flex xl:odd:flex-row-reverse xl:justify-between'
-            >
-              <div className='flex flex-col items-center lg:items-start xl:justify-center'>
-                <h3 className='inline-flex items-center justify-center w-full gap-3 lg:justify-start md:gap-5 lg:gap-6'>
-                  {service.titleIcons.map((icon, idx) => <Fragment key={`icon_${idx}`}>{icon}</Fragment>)}
-                  <strong className='text-base leading-[19px] md:text-[28px] md:leading-[33px]'>{service.title}</strong>
-                </h3>
-                {service.subTitle &&
-                  <p className='text-base md:text-[28px] lg:text-[32px] leading-5 md:leading-[33px] lg:leading-[38px] mt-[10px] md:mt-[18px] text-center lg:mb-[3px]'>
-                    {service.subTitle}
-                  </p>
-                }
-                <span className={`
+            <Fragment key={`title_${index}`}>
+              <div
+                className='w-[343px] md:w-[584px] lg:w-[659px] xl:w-[1267px] mx-auto xl:flex xl:odd:flex-row-reverse xl:justify-between'
+              >
+                <div className='flex flex-col items-center lg:items-start xl:justify-center'>
+                  <h3 className='inline-flex items-center justify-center w-full gap-3 lg:justify-start md:gap-5 lg:gap-6'>
+                    {service.titleIcons.map((icon, idx) => <Fragment key={`icon_${idx}`}>{icon}</Fragment>)}
+                    <strong className='text-base leading-[19px] md:text-[28px] md:leading-[33px]'>{service.title}</strong>
+                  </h3>
+                  {service.subTitle &&
+                    <p className='text-base md:text-[28px] lg:text-[32px] leading-5 md:leading-[33px] lg:leading-[38px] mt-[10px] md:mt-[18px] text-center lg:mb-[3px]'>
+                      {service.subTitle}
+                    </p>
+                  }
+                  <span className={`
                 rounded-3xl md:rounded-[40px] py-2 md:py-4 px-3 md:px-6 text-sm md:text-xl lg:text-2xl leading-[14px] md:leading-6 lg:leading-7 mt-7 md:mt-12 lg:mt-14 block mx-auto lg:mx-0 w-fit bg-green-03 -tracking-[0.01em]
               `}>
-                  {service.label}
-                </span>
-                <p
-                  className='mt-[18px] md:mt-7 lg:mt-6 mb-[30px] md:mb-12 lg:mb-[60px] xl:mb-0 text-xs md:text-lg leading-[18px] md:leading-8 text-center lg:text-left xl:w-[659px]'
-                  dangerouslySetInnerHTML={{ __html: service.description }}
-                />
+                    {service.label}
+                  </span>
+                  <p
+                    className='mt-[18px] md:mt-7 lg:mt-6 mb-[30px] md:mb-12 lg:mb-[60px] xl:mb-0 text-xs md:text-lg leading-[18px] md:leading-8 text-center lg:text-left xl:w-[659px]'
+                    dangerouslySetInnerHTML={{ __html: service.description }}
+                  />
+                </div>
+                {service.icons.map((icon, idx) =>
+                  <div key={`serviceIcon_${idx}`} className='mx-auto w-fit lg:mx-0'>
+                    {icon}
+                  </div>)}
               </div>
-              {service.icons.map((icon, idx) =>
-                <div key={`serviceIcon_${idx}`} className='mx-auto w-fit lg:mx-0'>
-                  {icon}
-                </div>)}
-            </div>
+              <TagSection cards={service.tags} />
+            </Fragment>
           )}
         </div>
       </section>
