@@ -20,7 +20,7 @@ const TagSection = ({ cards }: TagSectionProps) => {
       const img = el?.querySelector('img');
       if (img) {
         const display = window.getComputedStyle(img).display;
-        return display === 'none' ? 'hidden' : 'h-[184px] md:max-h-[240px] md:min-h-[240px] md:h-[240px]';
+        return display === 'none' ? 'hidden' : 'min-h-[184px] max-h-[184px] h-[184px] md:max-h-[240px] md:min-h-[240px] md:h-[240px]';
       }
       return 'hidden'; // 기본적으로 이미지가 없거나 가려진 경우 hidden 적용
     });
@@ -67,7 +67,7 @@ const TagSection = ({ cards }: TagSectionProps) => {
             {card.title}
           </h6>
           {card.items.map((item, idx) =>
-            <div key={`item_${idx}`} className={`h-full inline-flex flex-col justify-between ${idx ? 'mt-11' : ''}`}>
+            <div key={`item_${idx}`} className={`h-full inline-flex flex-col justify-between w-full ${idx ? 'mt-11' : ''}`}>
               <ul className='inline-flex flex-wrap gap-[6px] mb-5 md:gap-2 md:mb-11'>
                 {item.itemTags.map(tag => <li
                   key={tag}
